@@ -114,6 +114,7 @@ function exportToText() {
 
 // Function to delete all orders from local storage
 function deleteAllOrders() {
+  exportToText()
   localStorage.removeItem('orders');
   orders = [];
   displayOrders();
